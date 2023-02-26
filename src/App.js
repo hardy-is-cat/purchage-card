@@ -1,25 +1,29 @@
+import { useState } from "react";
 import "./App.css";
 import "./reset.css";
-// import Thumnail from "./components/Thumnail/Thumnail";
-// import Counter from "./components/Counter/Counter";
-// import Price from "./components/Price/Price";
-// import Delivery from "./components/Delivery/Delivery";
-// import Result from "./components/Result/Result";
 import { Counter, Delivery, Price, Result, Thumnail } from "./components/index";
 
-function PaymentButton() {
-  return <button type="submit">구매하기</button>;
-}
-
 function App() {
+  const [count, setCount] = useState(0);
+  const price = 6370;
+
+  function minus() {
+    if (count > 0) {
+      setCount(count - 1);
+    }
+  }
+
+  function plus() {
+    setCount(count + 1);
+  }
+
   return (
     <div className="App">
       <Thumnail />
       <Price />
       <Delivery />
-      <Counter />
-      <Result />
-      <PaymentButton />
+      <Counter minus={minus} plus={plus} count={count} />
+      <Result count={count} price={price} />
     </div>
   );
 }
