@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import "./reset.css";
+// import Thumnail from "./components/Thumnail/Thumnail";
+// import Counter from "./components/Counter/Counter";
+// import Price from "./components/Price/Price";
+// import Delivery from "./components/Delivery/Delivery";
+// import Result from "./components/Result/Result";
+import { Counter, Delivery, Price, Result, Thumnail } from "./components/index";
+
+function PaymentButton() {
+  return <button type="submit">구매하기</button>;
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Thumnail />
+      <Price />
+      <Delivery />
+      <Counter />
+      <Result />
+      <PaymentButton />
     </div>
   );
 }

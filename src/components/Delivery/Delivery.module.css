@@ -1,0 +1,33 @@
+.wrap {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-gray-200);
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.info {
+  margin-bottom: 4px;
+}
+
+.price::before {
+  display: inline-block;
+  content: "";
+  width: 1px;
+  height: 14px;
+  transform: translateY(2px);
+  margin: 0 4px;
+  background-color: var(--color-gray-200);
+}
+
+.price {
+  font-weight: bold;
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.standard {
+  color: var(--color-gray-300);
+}

@@ -1,0 +1,27 @@
+.wrap {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.discountRate {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-secondary);
+}
+
+.price {
+}
+
+.regular {
+  font-size: 16px;
+  text-decoration: line-through;
+  color: var(--color-gray-300);
+}
+
+.sale {
+  margin-left: 10px;
+  font-size: 22px;
+  color: var(--color-gray-400);
+}

@@ -1,0 +1,11 @@
+.thumnail {
+  display: block;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.title {
+  color: var(--color-gray-400);
+  font-size: 20px;
+  margin-bottom: 16px;
+}

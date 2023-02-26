@@ -1,0 +1,28 @@
+.counter {
+  border-bottom: 1px solid var(--color-gray-200);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.counterWrap {
+  border: 1px solid var(--color-gray-200);
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  color: var(--color-gray-400);
+}
+
+.minusButton,
+.plusButton {
+  width: 34px;
+  height: 34px;
+  background: var(--color-gray-200);
+  border: 0;
+  color: inherit;
+}
+
+.output {
+  width: 34px;
+  text-align: center;
+  font-weight: bold;
+}
